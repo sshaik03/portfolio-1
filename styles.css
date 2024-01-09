@@ -1,0 +1,435 @@
+/* Variables */
+:root {
+  --font-family: "Poppins", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #222222; /* Background color: Dark gray */
+  --primary-color: #e6e6e6; /* Primary color: Light gray */
+  --secondary-color: #1565c0; /* Secondary color: Orange */
+  --primary-shadow: #888888; /* Primary shadow color: Medium gray */
+  --secondary-shadow: #996633; /* Secondary shadow color: Brown */
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav h1:hover {
+  color:#1565c0;
+}
+
+
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 100%;
+  margin: auto;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  overflow: hidden; /* Add this line to hide overflowing content */
+
+}
+
+.hero img {
+  height: 23.75rem;
+  width: 17.8rem;
+  object-fit: cover; /* Add this line to ensure the image covers the container */
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); /* Adjust the color and intensity as desired */
+  z-index: 1;
+
+}
+
+.bio {
+  width: 35rem;
+  height:12rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  overflow: hidden; /* Add this line to hide overflowing content */
+
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+/* More About Section */
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+  color: var(--primary-color); /* Set text color */
+  
+  
+  
+}
+.more-about h2:hover{
+  color: #1565c0;
+}
+.contact h2:hover{
+  color: #1565c0;
+
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+  color: var(--primary-color); /* Set text color */
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  color: var(--primary-color); /* Set text color */
+  
+  
+}
+
+.bio-text {
+  font-weight: normal;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Top Skills section */
+.top-skills {
+  background-color: var(--bg-color);
+  
+  padding: 2rem 6rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #1565c0;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); /* Adjust the color and intensity as desired */
+
+}
+
+.languages{
+  color: white; 
+  text-align: center;
+}
+
+
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.projects {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0rem;
+  background-color: var(--bg-color);
+  color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+.projects-title:hover {
+  color: #1565c0; /* Orange color for the title on hover */
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.project-link {
+  color: #2196F3; /* Blue color for the link */
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.project-link:hover {
+  color: #1565c0; /* Darker shade of blue on hover */
+}
+
+/* Contact section */
+.contact {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  padding: 2rem 6rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+  color: var(--primary-color);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--bg-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  border: 2px outset var(--bg-color);
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--bg-color);
+  font-size: 0.875rem;
+  outline: none;
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+}
+
+.contact-form-container .input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--bg-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--bg-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  color: white;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: #2196F3; /* Blue color on hover */
+  border-color: #2196F3; /* Blue border color on hover */
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+.socicon:hover {
+  transform: scale(1.3); /* Increase the size on hover */
+}
+/* Navbar */
+nav {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1.5rem;
+  color: var(--primary-color);
+  transition: color var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.burger-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bars {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: color var(--transition);
+}
+
+.bars:hover {
+  color: var(--secondary-color);
+}

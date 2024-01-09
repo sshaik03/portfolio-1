@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>SAMEEN SHAIK | Aspiring Software Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>SAMEEN SHAIK</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+ 
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img src="sameenpic.jpeg" alt="Image" loading="lazy" class="hero-img">
+
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p>
+          Welcome to my page! I'm Sameen, and I'm a computer science student at Umass Amherst. I am passionate about technology and have a strong interest in exploring its endless possibilities. When I'm not working on a project, you can find me on the tennis court or at the gym. 
+        </p>
+      </div>
+</section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>A Little More About Me</h2>
+      <p>
+        I first got exposed to web development during my freshman year of high school, and it ignited my curiosity and passion for creating websites and applications. In my sophomore year, I participated in the MATLAB STEM challenge where we built a fitness tracker by collecting raw data and using algorithms. 
+
+
+      </p>
+      <p>
+        After my senior year, I had the opportunity to intern at a company where I worked with license plates and developed code in Java to distinguish between counterfeit and real identification. To do this, I was tasked with testing hundreds of counterfeit and real IDs through the identification scanner. I then uploaded these scans, including UV pictures to the cloud while encrypting them to avoid unauthorized access.
+      </p>
+      <p>
+        I have a burning passion for technology and a relentless drive to keep learning and growing within the field. Whether it's exploring backend development or improving my front-end skills, I am always eager to expand my knowledge and create meaningful and impactful projects. For this reason I am continuing to go out of my comfort zone building projects with technologies I have not used before. I may not be perfect, but I'm committed to putting in the effort and dedication required to succeed.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="top-skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+        <h3 class = "languages">Languages</h3>
+      <div class="skills-container">
+        <div class="skill">
+          <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">C</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Java</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">SQL</span>
+        </div>
+
+        
+
+        <!-- Add more skills here -->
+        
+
+        
+
+       
+      </div>
+      <h3 class="languages">Frameworks</h3>
+      <div class="skills-container">
+    <div class="skill">
+      <span class="skill-name">React.js</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Bootstrap</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Node.js</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Express.js</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Flask</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Django</span>
+    </div>
+  </div>
+  <h3 class="languages">Developer Tools</h3>
+      <div class="skills-container">
+    <div class="skill">
+      <span class="skill-name">Git</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">Bash</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">BeautifulSoup</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">PythonAnywhere</span>
+    </div>
+    <div class="skill">
+      <span class="skill-name">MongoDB</span>
+    </div>
+  </div>
+     
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="tennis.png"
+            alt="tennisapp"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Tennis Statistics App</h3>
+          <p class="project-details">
+            Designed and developed a fullstack web application utilizing Flask and BeautifulSoup for webscraping. Created a user friendly interface that returns real time statistics from the ATP website. This application allows for users to search for any ATP player (male) and returns many statistics including prize money, titles, and grandslams. 
+          </p>
+          <a href="https://github.com/sshaik03/tenniswebapp/tree/main" target="_blank" class="project-link">Github Repo | </a>
+          <a href="https://tennis-web-app.sshaik.repl.co/" target="_blank" class="project-link">Website Link</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="expenses1.jpeg"
+            alt="expenses"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker App</h3>
+          <p class="project-details">
+            Engineered a comprehensive Expense Tracker utilizing the MERN (MongoDB, Express.js, React.js, Node.js) stack. Orchestrated seamless Create, Read, Update, and Delete (CRUD) functionalities for expense management. Implemented robust user authentication, ensured data integrity through secure storage, and facilitated deployment for optimized accessibility.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="construction.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Under Construction</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mzblzadb" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://twitter.com/sshaik1222?lang=ca" target="_blank"
+        ><img
+          src="twitter.png"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/sameenshaik_/" target="_blank"
+        ><img
+          src="instagram.webp"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/sameen-shaik-073426244/" target="_blank"
+        ><img
+          src="linkedln.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/sshaik03" target="_blank"
+        ><img src="github2.png" alt="Github" class="socicon"
+      /></a>
+
+   
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
